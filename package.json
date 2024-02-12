@@ -1,5 +1,6 @@
 {
-  "name": "tsoa-monorepo",
+  "name": "@cipher-developers/tsoa",
+  "version": "1.1.0",
   "description": "Build swagger-compliant REST APIs using TypeScript and Node",
   "private": true,
   "keywords": [
@@ -39,9 +40,9 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "yarn run eslint --ext .ts --fix",
     "watch": "lerna run watch",
-    "lerna": "lerna"
+    "lerna": "lerna",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
-  "dependencies": {},
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
@@ -51,6 +52,7 @@
     "lerna": "^8.0.1",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
+    "standard-version": "^9.5.0",
     "ts-node": "^10.9.2"
   },
   "resolutions": {
