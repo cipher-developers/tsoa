@@ -1,6 +1,6 @@
 {
   "name": "@cipher-developers/tsoa",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Build swagger-compliant REST APIs using TypeScript and Node",
   "private": true,
   "keywords": [
@@ -19,7 +19,6 @@
   "author": "Luke Autry <lukeautry@gmail.com> (http://www.lukeautry.com)",
   "license": "MIT",
   "scripts": {
-    "build": "lerna run build --stream",
     "deploy": "yarn bump && lerna publish from-git",
     "bump": "lerna version patch -m \"Release v%s\" --force-publish",
     "clean": "lerna run clean --stream",
